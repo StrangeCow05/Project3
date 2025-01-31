@@ -1,4 +1,3 @@
-
 occams razor
 
 #include <random>
@@ -23,3 +22,17 @@ function advance
   else if coin flip is 0
    dont do anything
 
+
+function printLane
+  for i in horse
+   if i == horse 
+    print horse[i]
+   else 
+    print dot
+
+function isWinner
+ for i in horse 
+ if i in horse == 14
+  keepGoing == False
+ else 
+  keepGoing == true
