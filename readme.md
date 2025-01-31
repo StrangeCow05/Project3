@@ -31,7 +31,6 @@ function printLane
     print dot
 
 function isWinner
- for i in horse 
  if i in horse == 14
   keepGoing == False
  else 
