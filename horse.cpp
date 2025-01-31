@@ -9,13 +9,14 @@ int main(){
  
  int horses[] = {0,0,0,0,0};
  bool keepGoing = true;
- 
+ int track = 0; 
  while (keepGoing){
   for (int i=0; i< 5 ;i++){
    advance(i, horses );
    isWinner(i, horses );
    printLane(i, horses );
   }//end for
+ track ++;
  std::cout <<"Press Enter to Continue:";
  std::cin.ignore();
  }//end while
@@ -41,14 +42,22 @@ void printLane(int horseNum, int* horses){
  for (int i = 0; i < 5; i++){
   for (int j = 0; j < 14; i++){
    if (i == horses[i]){
-    std::cout <<horses[i]<<std::endl;
+    std::cout <<horses[i] ;
    }else{
-    std::cout <<"."<< std::endl;
+    std::cout <<"." ;
    }//end if
   }//end for II
+  std::cout<<"."<<std::endl;
  }//end for I
 }//end printlane
 
 bool isWinner(int horseNum, int* horses){
-
+ for (int i = 0; i < 5; i++){
+  if (horses[i] = 14){
+   keepGoing = false;
+  }else {
+   keepGoing = true;
+  }//end if
+ }//end for
+ return true;
 }//end isWinner
