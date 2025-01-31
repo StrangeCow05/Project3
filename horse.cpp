@@ -42,17 +42,19 @@ void advance(int horseNum, int* horses){
 
 void printLane(int horseNum, int* horses){
  for (int i = 0; i < 14; i++){
-   if (i == horses[i]){
-    std::cout <<horses[i] ;
+   int j = 0;
+   if (i == horses[j]){
+    std::cout <<j ;
    }else{
     std::cout <<"." ;
    }//end if
+  j++;
  }//end for
  std::cout<<"K"<<std::endl; 
 }//end printlane
 
 bool isWinner(int horseNum, int* horses){
-  if (horses == 14){
+  if (horses[1] == 14){
    return false;
   }else {
    return true;
